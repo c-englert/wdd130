@@ -5,6 +5,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+  --cor-borda: #000;
+  --padding: 20px;
+  --border: 3px
+}
+
 body {
   color: #222;
   background: #fff;
@@ -13,13 +19,13 @@ body {
 
 nav {
   background-color: steelblue;
-  padding: 10px;
+  padding: var(--padding);
 }
 
 nav a {
   color: white;
   display: block;
-  padding: 20px;
+  padding: var(--padding);
 }
 
 h1 {
@@ -33,15 +39,15 @@ main {
 main img {
   width: 150px;
   height: auto;
-  border: 1px solid #000;
-  padding: 10px;
+  border: var(--border) solid var(--cor-borda);
+  padding: var(--padding);
   box-shadow: 0 0 10px #333;
 }
 
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgba(0 0 0 / 0.2);
+  border: var(--border) solid rgba(0 0 0 / 0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
@@ -56,17 +62,17 @@ aside img {
 img {
   width: 150px;
   height: auto;
-  border: 1px solid black;
-  padding: 2px;
+  border: var(--border) solid var(--cor-borda);
+  padding: var(--padding);
   box-shadow: 0 0 30px gray;
 }
 
 p {
-  padding: 0px;
+  padding: var(--padding);
 }
 
 footer {
   margin-top: 10px;
-  border-top: 1px solid #000;
+  border-top: var(--border) solid var(--cor-borda);
   text-align: center;
 }
