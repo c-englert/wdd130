@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
   --cor-primaria: #055a05; /* verde-floresta */
   --cor-secundaria: #f4a261; /* bege médio */
@@ -46,6 +45,16 @@ nav, p, section, article {
     height: auto;
 }
 
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--cor-secundaria);
+    padding: 16px;
+    opacity: 0.85;
+    max-width: 92%;
+}
+
 h1 {
   position: absolute;
   top: 20px;
@@ -57,24 +66,16 @@ h1 {
   color: #fff;
 }
 
-article {
-    position: absolute;
-
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--cor-secundaria);
-    padding: 10px;
-    opacity: 0.85;
-    max-width: 80%;
-}
-
-
 .hero article img {
   float: right;
   width: 125px;
   /* 5. posso adicionar outros estilos à imagem, como border, margin, box-shadow, etc., dependendo da sua imagem e do design. */
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
+}
+
+footer {
+    background-color: var(--cor-destaque2);
 }
