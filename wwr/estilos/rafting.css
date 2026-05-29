@@ -18,6 +18,62 @@ body {
   color: var(--cor-destaque1);
 }
 
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  padding: 8px 12px;
+}
+
+nav a:hover {
+  color: var(--cor-destaque1)
+}
+
+.historia-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.aventuras {
+  display: flex;
+  flex-wrap: wrap;   /* permite quebrar linha */
+  gap: 16px;
+}
+
+.aventuras h2 {
+  flex-basis: 100%;  /* h2 ocupa a linha toda, empurra as figuras pra baixo */
+}
+
+.aventuras figure {
+  flex: 1;
+  margin: 0;
+}
+
+.aventuras img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aventuras figcaption {
+  text-align: center;
+  padding: 8px;
+}
+
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -77,5 +133,21 @@ h1 {
 }
 
 footer {
-    background-color: var(--cor-destaque2);
+  background-color: var(--cor-destaque2);
+  display: flex;
+  justify-content: space-between;  /* texto à esquerda, ícones à direita */
+  align-items: center;
+  padding: 16px;
 }
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;  /* empurra os ícones pra direita */
+  gap: 16px;                  /* espaço entre eles */
+}
+
+.socialmedia img {
+  width: 40px;   /* tamanho dos ícones */
+  height: auto;
+}
+
