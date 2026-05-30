@@ -48,6 +48,12 @@ nav a:hover {
   align-items: center;
 }
 
+.historia-conteudo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .aventuras {
   display: flex;
   flex-wrap: wrap;   /* permite quebrar linha */
