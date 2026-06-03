@@ -127,6 +127,7 @@ nav, p, section, article {
 
 footer {
   background-color: var(--cor-destaque2);
+  color: #000000;
   display: flex;
   justify-content: space-between;  /* texto à esquerda, ícones à direita */
   align-items: center;
