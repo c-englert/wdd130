@@ -121,7 +121,7 @@ nav, p, section, article {
   width: 125px;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
 }
 
@@ -134,13 +134,13 @@ footer {
   padding: 16px;
 }
 
-.socialmedia {
+.redes-sociais {
   display: flex;
   justify-content: flex-end;  /* empurra os ícones pra direita */
   gap: 16px;                  /* espaço entre eles */
 }
 
-.socialmedia img {
+.redes-sociais img {
   width: 40px;   /* tamanho dos ícones */
   height: auto;
 }

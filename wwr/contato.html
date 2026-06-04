@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale com a White Water Rafting</title>
+    <title>Fale Conosco | White Water Rafting</title>
     <meta name="description" content="Para registrar uma manifestação preencha o formulário abaixo:">
     <meta name="author" content="Claudio Englert">
     <link rel="stylesheet" href="estilos/rafting.css">
@@ -42,7 +42,7 @@
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1974.970136132635!2d-55.79143326213425!3d-29.77875953956429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1780577819593!5m2!1spt-BR!2sbr"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form action="">
+            <form>
                 <label for="q1">Nome:</label>
                 <input type="text" name="q1" id="q1">
 
@@ -50,15 +50,15 @@
                 <input type="text" name="q2" id="q2">
 
                 <p>Propósito da Mensagem</p>
-                <label><input type="radio" name="q3" value="1"> Dúvida Geral</label>
-                <label><input type="radio" name="q3" value="2"> Pergunta sobre Reserva</label>
-                <label><input type="radio" name="q3" value="3"> Sugestão</label>
+                <label for="q3a"><input type="radio" name="q3" id="q3a" value="1"> Dúvida Geral</label>
+                <label for="q3b"><input type="radio" name="q3" id="q3b" value="2"> Pergunta sobre Reserva</label>
+                <label for="q3c"><input type="radio" name="q3" id="q3c" value="3"> Sugestão</label>
 
                 <label for="q4">Mensagem</label>
                 <textarea name="q4" id="q4"></textarea>
 
-                <label>
-                    <input type="checkbox" name="q5" value="sim">
+                <label for="q5">
+                    <input type="checkbox" name="q5" id="q5" value="sim">
                     Por favor, me inscreva na newsletter mensal
                 </label>
 
@@ -86,7 +86,7 @@
 
     <footer>
         <p>© 2026 White Water Rafting | Claudio Englert</p>
-        <nav class="socialmedia">
+        <nav class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook.svg" alt="Logo do facebook">
             </a>
