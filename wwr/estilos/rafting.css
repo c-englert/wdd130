@@ -182,9 +182,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  align-items: start;
+  align-items: stratch;
 }
 
+.contato-info address {
+  text-align: center;
+}
 
 .contato-form form {
   flex: 1;
@@ -195,11 +198,65 @@ footer {
 
 .map {
   flex: 1;
+  display: flex;
 }
 
 .map iframe {
   width: 100%;
   max-width: 500px;
-  height: 350px;
+  height: 100%;
+  min-height: 350px;
   display: block;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.campo-opcoes {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.campo-opcoes p {
+  flex: 0 0 120px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.campo-opcoes .opcoes {
+  flex: 1;
+}
+
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.campo label {
+  flex: 0 0 120px;   /* largura fixa do rótulo à esquerda */
+  text-align: right;
+}
+
+.campo input[type="text"] {
+  flex: 1;
+  padding: 10px;    /* dá altura aos campos */
+}
+
+.contato-form textarea {
+  padding: 10px;
+  min-height: 100px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #f4a261;
 }

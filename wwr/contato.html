@@ -43,16 +43,25 @@
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <form>
-                <label for="q1">Nome:</label>
-                <input type="text" name="q1" id="q1">
+                <div class="campo">
+                    <label for="q1">Nome:</label>
+                    <input type="text" name="q1" id="q1">
+                </div>
 
-                <label for="q2">Email:</label>
-                <input type="text" name="q2" id="q2">
+                <div class="campo">
+                    <label for="q2">Email:</label>
+                    <input type="text" name="q2" id="q2">
+                </div>
 
-                <p>Propósito da Mensagem</p>
-                <label for="q3a"><input type="radio" name="q3" id="q3a" value="1"> Dúvida Geral</label>
-                <label for="q3b"><input type="radio" name="q3" id="q3b" value="2"> Pergunta sobre Reserva</label>
-                <label for="q3c"><input type="radio" name="q3" id="q3c" value="3"> Sugestão</label>
+                <div class="campo-opcoes">
+                    <p>Propósito da Mensagem</p>
+                    <div class="opcoes">
+                        <label for="q3a"><input type="radio" name="q3" id="q3a" value="1"> Dúvida Geral</label>
+                        <label for="q3b"><input type="radio" name="q3" id="q3b" value="2"> Pergunta sobre
+                            Reserva</label>
+                        <label for="q3c"><input type="radio" name="q3" id="q3c" value="3"> Sugestão</label>
+                    </div>
+                </div>
 
                 <label for="q4">Mensagem</label>
                 <textarea name="q4" id="q4"></textarea>
