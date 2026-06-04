@@ -172,9 +172,10 @@ footer {
 
 }
 .funcionarios img {
-  width: 50%;
+  width: 150px;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .contato-form {
