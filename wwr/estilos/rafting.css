@@ -154,3 +154,51 @@ footer {
   background-color: rgba(38, 70, 83, 0.7);
   color: #fff;
 }
+
+.funcionarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.funcionarios h2 {
+  flex-basis: 100%;
+}
+
+.funcionarios figure {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+
+}
+.funcionarios img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.contato-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: start;
+}
+
+
+.contato-form form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.map {
+  flex: 1;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  display: block;
+}

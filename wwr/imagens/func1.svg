@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Foto de perfil de funcionário">
+  <rect width="300" height="300" fill="#264653"/>
+  <circle cx="150" cy="115" r="55" fill="#e9c46a"/>
+  <path d="M55 300c0-60 45-95 95-95s95 35 95 95z" fill="#055a05"/>
+  <path d="M95 95c0-30 25-50 55-50s55 20 55 50c0 8-3 14-3 14-6-18-25-30-52-30s-46 12-52 30c0 0-3-6-3-14z" fill="#3b2a1a"/>
+</svg>
