@@ -135,8 +135,8 @@ nav, p, section, article {
     bottom: 20px;
     left: 20px;
     background-color: rgba(38, 70, 83, 0.85);
+    color: #fff;
     padding: 16px;
-    opacity: 0.85;
     max-width: 92%;
 }
 
@@ -456,4 +456,18 @@ footer {
   .passeio:nth-child(even) img {
     order: 0;
   }
+}
+
+/* headings adicionados p/ semântica (sem quebrar layout/contraste) */
+.hero article h2 {
+  position: static;
+  color: #fff;
+  text-align: left;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.contato-form h2 {
+  flex-basis: 100%;
 }
