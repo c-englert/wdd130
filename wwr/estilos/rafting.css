@@ -134,7 +134,7 @@ nav, p, section, article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: var(--cor-secundaria);
+    background-color: rgba(38, 70, 83, 0.85);
     padding: 16px;
     opacity: 0.85;
     max-width: 92%;
