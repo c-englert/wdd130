@@ -5,10 +5,10 @@
 }
 
 :root {
-  --cor-primaria: #055a05; /* verde-floresta */
-  --cor-secundaria: #f4a261; /* bege médio */
-  --cor-destaque1: #264653; /* azul-escuro acinzentado */
-  --cor-destaque2: #e9c46a; /* amarelo-claro dourado */
+  --cor-primaria: #055a05;
+  --cor-secundaria: #f4a261;
+  --cor-destaque1: #264653;
+  --cor-destaque2: #e9c46a;
   --fonte-titulo: "Times New Roman", "Georgia", serif;
   --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -22,6 +22,10 @@ header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
 }
 
 header img {
@@ -78,12 +82,12 @@ nav a:hover {
 
 .aventuras {
   display: flex;
-  flex-wrap: wrap;   /* permite quebrar linha */
+  flex-wrap: wrap;
   gap: 16px;
 }
 
 .aventuras h2 {
-  flex-basis: 100%;  /* h2 ocupa a linha toda, empurra as figuras pra baixo */
+  flex-basis: 100%;
 }
 
 .aventuras figure {
@@ -148,7 +152,6 @@ nav, p, section, article {
 .hero h1, 
 .hero h2 {
   position: absolute;
-  top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
@@ -161,7 +164,7 @@ nav, p, section, article {
 }
 
 .hero h2 {
-  top: 89px;   /* ajuste esse valor até encostar embaixo do h1 */
+  top: 89px;
 }
 
 .funcionarios {
@@ -251,14 +254,14 @@ nav, p, section, article {
 }
 
 .campo label {
-  flex: 0 0 120px;   /* largura fixa do rótulo à esquerda */
+  flex: 0 0 120px;
   text-align: right;
 }
 
 .campo input[type="text"],
 .campo input[type="email"] {
   flex: 1;
-  padding: 10px;    /* dá altura aos campos */
+  padding: 10px;
 }
 
 .contato-form textarea {
@@ -322,24 +325,19 @@ button:hover {
 
 .redes-sociais {
   display: flex;
-  justify-content: flex-end;  /* empurra os ícones pra direita */
-  gap: 16px;                  /* espaço entre eles */
+  justify-content: flex-end;
+  gap: 16px;
 }
 
-.redes-sociais img {
-  width: 40px;   /* tamanho dos ícones */
-  height: auto;
-}
-
-.redes-sociais a {
-    text-decoration: none;
-}
-
-.redes-sociais img {
+.redes-sociais img { 
   height: 36px;
   width: auto;
   display: block;
   padding: 0px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
 }
 
 footer p {
@@ -356,26 +354,15 @@ footer {
   background-color: var(--cor-destaque2);
   color: #000000;
   display: flex;
-  justify-content: space-between;  /* texto à esquerda, ícones à direita */
+  justify-content: space-between; 
   align-items: center;
   padding: 0px 20px;
   margin: auto;
-
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #fff;   /* importante: senão o conteúdo aparece atrás */
-}
-
-footer {
   position: sticky;
   bottom: 0;
   z-index: 10;
 }
-/* ===== Página Passeios ===== */
+
 .intro-passeios {
   text-align: center;
 }
@@ -418,11 +405,6 @@ footer {
   margin-bottom: 8px;
 }
 
-/* alterna a foto para a direita nos cards pares */
-.passeio:nth-child(even) img {
-  order: 2;
-}
-
 .tabela-passeios {
   text-align: center;
 }
@@ -458,7 +440,6 @@ footer {
   }
 }
 
-/* headings adicionados p/ semântica (sem quebrar layout/contraste) */
 .hero article h2 {
   position: static;
   color: #fff;
